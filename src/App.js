@@ -1,9 +1,14 @@
+import React from "react";
 import './App.css';
+import Nav from "./components/navegation/navegation_bar"
+import Home from "./pages/home/home";
 
 function App() {
   return (
    <>
-   <h1>I will build this thing</h1>
+       <Nav/>
+       <Home/>
+
    </>
   );
 }
