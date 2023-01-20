@@ -23,45 +23,63 @@ function Home() {
                 <div className="cuerpo">
                     <aside className="historias">
                         <h2>User histories</h2>
-                        <p>This conversation started in Prague. </p>
+                        <h5> Participatory tourism involves the tourist who wishes to encounter the inhabitants of the country that is visited, and is becoming an increasingly important aspect of tourism, enhanced by the development of web 2.0 and couchsurfing. This special issue of Espaces, Tourisme & Loisirs contains a dossier on participatory tourism which has 7 p </h5>
                     </aside>
                     <aside className="foto">
-                        <h2>Find more about us</h2>
-                        <p>Picture</p>
+                        <h2>Traveling high in the mountains</h2>
                     </aside>
+
                     <aside className="historias">
-                        <h2>User histories</h2>
-                        <p>Since the 1970s, non-governmental.</p>
+                        <h2>Some histories</h2>
+                        <h5> This paper examines the livelihood linkage of community based ecotourism at Thekkady. The evolution and growth of tourism in the study area is also discussed. Time series data pertaining to the direct income from community based ecotourism programmes has been analysed to explore the economic significance of tourism to the local community. Though the study covers only a part of the expenditure by tourists, its socio-economic significance is really laudable. The paper also explores the sustainability issues of ecotourism as well. </h5>
+
                     </aside>
                 </div>
+
+
+
+
+
                 <div className="mensajes">
                     <section className="icons">
                         <h1>WHY CHOOSE BY SHARING & ENJOYING</h1>
                         <article>
                             <span>
                                 <img src={meet}/>
-                                <h2>Meet</h2>
-                                <p> Hola como estas</p>
+                                <div className="nota">
+                                    <h2>Meet</h2>
+                                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae eos fugiat necessitatibus neque non reprehenderit? Accusamus accusantium dicta doloribus, ea, facere ipsam iste maiores nisi quas sed sequi, suscipit.</h6>
+                                </div>
+
                             </span>
                             <span>
                                 <img src={share}/>
-                                <h2>Share</h2>
-                                <p> Comaparte</p>
-                            </span>
+                                <div className="nota">
+                                    <h2>Share</h2>
+                                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur ducimus earum excepturi explicabo, libero nesciunt nobis possimus quis quo repudiandae similique. Dolorem pariatur saepe sunt veritatis. Alias, facere incidunt.</h6>
+                                </div>
+                                </span>
                             <span>
                                 <img src={enjoy}/>
-                                <h2>Enjoy</h2>
-                                <p> Disfruta</p>
+                                <div className="nota">
+                                    <h2>Enjoy</h2>
+                                     <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloremque eveniet qui reiciendis rem saepe, suscipit voluptatem. Accusantium aliquam delectus esse expedita, facere laboriosam nesciunt, officia praesentium quasi, repellendus velit?</h6>
+                                </div>
+
                             </span>
                             <span>
                                 <img src={grow}/>
-                                <h2>Expand your opportunities</h2>
-                                <p>Crece</p>
+                                <div className="nota">
+                                    <h2>Opportunities</h2>
+                                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam consequuntur, dignissimos dolores eveniet ex expedita facere in ipsum magnam maxime molestias nihil optio perferendis, quis suscipit temporibus vel voluptatem?</h6>
+                                </div>
+
                             </span>
                         </article>
                     </section>
                 </div>
             </main>
+
         </>
     );
 }

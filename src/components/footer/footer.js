@@ -4,8 +4,8 @@ function Footer(){
     return(
         <>
             <footer>
-                <section>
-                    <ul>
+                <section className="piedepagina">
+                    <ul className="texto_pie" >
                         <a href={"/"}> <li>About us</li></a>
                         <a href=""><li>Our mission</li></a>
                         <a href=""><li>Our goals</li></a>
@@ -15,21 +15,7 @@ function Footer(){
                         <a href=""><li>Legal notes</li></a>
                         <a href=""><li>FQS</li></a>
                         <a href=""><li>Contacts us</li></a>
-
-
-
-
-
-
-
-
-
                     </ul>
-                </section>
-                <section>
-                    <span>
-                        2003 Utrecht, The Netherlands,
-                    </span>
                 </section>
             </footer>
 
