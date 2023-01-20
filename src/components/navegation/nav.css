@@ -1,5 +1,10 @@
+:root {
+    --color-header:hsl(30,100%,50%);
+    --color-buttons: hsl(20, 78%, 60%);
+}
+
 nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -10,7 +15,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: orangered;
+    background-color: var(--color-header);
 }
 
 nav ul {
@@ -21,7 +26,7 @@ nav ul {
     flex-basis: 300px;
     flex-grow: 0;
     flex-shrink: 1;
-}
+    }
 
 nav a,
 nav a:visited {
@@ -43,7 +48,7 @@ img{
 }
 
 nav ul li button{
-    background-color: red;
+    background-color: var(--color-buttons);
     border-radius: 4px;
     border: solid white 1px;
     padding: 8px 15px 8px 15px;

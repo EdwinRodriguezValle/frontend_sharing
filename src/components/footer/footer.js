@@ -6,15 +6,24 @@ function Footer(){
             <footer>
                 <section>
                     <ul>
-                        <li>About us</li>
-                        <li>Our mission</li>
-                        <li>Our goals</li>
-                        <li>Terms of use</li>
-                        <li>Privacy & security</li>
-                        <li>Data right</li>
-                        <li>Legal notes</li>
-                        <li>FQS</li>
-                        <li>Contacts us</li>
+                        <a href={"/"}> <li>About us</li></a>
+                        <a href=""><li>Our mission</li></a>
+                        <a href=""><li>Our goals</li></a>
+                        <a href=""><li>Terms of use</li></a>
+                        <a href=""><li>Privacy & security</li></a>
+                        <a href=""><li>Data right</li></a>
+                        <a href=""><li>Legal notes</li></a>
+                        <a href=""><li>FQS</li></a>
+                        <a href=""><li>Contacts us</li></a>
+
+
+
+
+
+
+
+
+
                     </ul>
                 </section>
                 <section>
@@ -22,7 +31,6 @@ function Footer(){
                         2003 Utrecht, The Netherlands,
                     </span>
                 </section>
-
             </footer>
 
         </>
