@@ -147,8 +147,6 @@ h6{
 }
 
 
-
-
 /*div {*/
 /*    width: calc(100% / 3);*/
 /*}*/
@@ -180,26 +178,36 @@ header {
     background-size: cover;
     color: black;
     margin: 50px 0px 0px 0px;
+    border-color: #0e0d0d;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+/*header button*/
+
+
+.joinus{
+    background-color: orangered;
+    border: solid 1px white;
+    color: white;
+    width: 20%;
+    border-radius: 10px;
 }
 
-header button {
+ #joinUs{
     background-color: orangered;
-    font-weight: 700;
+    font-weight: 200;
     border: solid 1px white;
-    border-radius: 10px;
+     border-radius: 10px;
     padding: 18px 35px;
     font-size: 30px;
     color: white;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    width: 18%;
-    margin: 70px 0px 30px 0px;
+    width: 100%;
 }
 
-header button:hover {
+#joinUs:hover {
     cursor: pointer;
     color: yellow;
-    width: 20%;
-    height: 10%;
     background-color: blue;
 }
 
@@ -217,4 +225,10 @@ header h2{
     width: 60%;
     text-align: center;
     text-shadow: white 0px 1px 4px;
+}
+
+img{
+    width: 60px;
+    height:60px;
+    border-radius: 20px;
 }

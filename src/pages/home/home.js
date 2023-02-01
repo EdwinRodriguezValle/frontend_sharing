@@ -1,20 +1,39 @@
-import React from "react";
+import React, {useState} from "react";
 import home from "./home.css"
 import Footer from "../../components/footer/footer";
 import meet from "../../assets/meet.gif"
 import share from "../../assets/share.jpg"
 import grow from "../../assets/grow.jpg"
 import enjoy from "../../assets/enjoy.jpg"
-
+import {Link} from "react-router-dom";
 
 function Home() {
+
+
     return (
+
+
         <>
+
+            <div>
+                <h1>Home Page</h1>
+                <Link to="/Home">Home-Page</Link>
+            </div>
+
+
             <main>
 
                 <header>
                     <h1> HEADER DARE TO EXPERIENCE AND SENSE NEW WAYS OF LIVING</h1>
-                    <button type="button"> JOIN US</button>
+                    <Link to="/singup" className="joinus">
+                        <button
+                            id="joinUs"
+                        type = "button"
+                        >
+                        JOIN US
+                    </button>
+                    </Link>
+
                     <h2>Enhance your life and your personality by hosting travellers from all around the world and
                         visiting nice people and cultures</h2>
 
@@ -35,9 +54,6 @@ function Home() {
 
                     </aside>
                 </div>
-
-
-
 
 
                 <div className="mensajes">
@@ -73,7 +89,6 @@ function Home() {
                                     <h2>Opportunities</h2>
                                     <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam consequuntur, dignissimos dolores eveniet ex expedita facere in ipsum magnam maxime molestias nihil optio perferendis, quis suscipit temporibus vel voluptatem?</h6>
                                 </div>
-
                             </span>
                         </article>
                     </section>

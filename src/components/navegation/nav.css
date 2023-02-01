@@ -1,15 +1,15 @@
 :root {
     --color-header:hsl(30,100%,50%);
-    --color-buttons: hsl(20, 78%, 60%);
+    --color-botones: hsl(26, 68%, 48%);
 }
 
-nav {
+.navegador{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 0px 50px 0px 50px;
-    z-index: 2;
+    z-index: 5;
 
     display: flex;
     flex-direction: row;
@@ -18,7 +18,7 @@ nav {
     background-color: var(--color-header);
 }
 
-nav ul {
+.ulNavegador{
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -41,14 +41,24 @@ nav a:hover {
 
 }
 
-img{
+.active{
+    font-weight: bold;
+
+}
+
+.default{
+    color: black;
+
+}
+
+.logo{
     width: 60px;
     height:60px;
     border-radius: 20px;
 }
 
-nav ul li button{
-    background-color: var(--color-buttons);
+#botones{
+    background-color: var(--color-botones);
     border-radius: 4px;
     border: solid white 1px;
     padding: 8px 15px 8px 15px;

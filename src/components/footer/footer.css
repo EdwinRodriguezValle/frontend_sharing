@@ -1,6 +1,6 @@
 :root {
-    --color-footer: hsla(62, 85%, 39%, 0.77);
-    --color-buttons: hsl(20, 78%, 60%);
+    --color-footer: hsla(30, 90%, 36%, 0.77);
+    --color-buttons: hsl(19, 97%, 48%);
 }
 
 footer {
@@ -17,7 +17,6 @@ footer {
     z-index: 1;
     margin-top: 715px;
     height: 40px;
-
 
 }
 
