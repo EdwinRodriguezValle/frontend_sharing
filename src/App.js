@@ -9,7 +9,7 @@ import ActivarColor from "./helpers/estado/activarColor";
 import CambiarObjetoUsandoPropiedades from "./helpers/estado/playerName";
 import Logo from "./assets/Logo_sharing.jpg";
 import ServiceUser from "./pages/servicesUser/servicesUser";
-import {Router, Route, Routes} from "react-router-dom";
+import {Router, Route, Routes, Navigate} from "react-router-dom";
 import ServiceProvider from "./pages/serviceProvider/serviceProvider";
 import UserProfile from "./pages/singUp/singUp";
 import NotFound from "./pages/notFound/notfound";
@@ -24,6 +24,7 @@ import Language from "./pages/language/language";
 function App() {
 
     const [player, setPlayer] = useState('');
+    const isSingUp = true;
 
   return (
    <>
@@ -37,10 +38,13 @@ function App() {
        <Footer/>
 
        <Routes>
+           {/*Esto es para configuar el rauter interactivamente*/}
            {/*<Route path="/product/:id" element={<ProductPage/>} />*/}
+           {/*<Route path="/faq" element=/!* DE CONDITIE KOMT HIER *!/ />*/}
+
            <Route path="/" element={<Home/>}/>
            <Route path="/singup" element={<SingUp/>}/>
-           <Route path="/singIn" element={<SingIn/>}/>
+           <Route path="/singin" element={isSingUp === true ? <SingIn/> : <Navigate to="/singup"/>}/>
            <Route path="/language" element={<Language/>}/>
            <Route path="*" element={<NotFound/>}/>
        </Routes>
@@ -60,14 +64,6 @@ function App() {
        {/*<Slider textLabel="bass" minRange="0" maxRange="4"/>*/}
        {/*<Slider textLabel="treble" minRange="1" maxRange="5"/>*/}
        {/*<Slider textLabel="corazones" minRange="20" maxRange="100"/>*/}
-
-
-
-
-
-
-
-
 
 
    </>
