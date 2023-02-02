@@ -6,6 +6,11 @@
 .pnp.js
 /.idea
 
+
+helpers
+notasReact.md
+Notas_CSS.md
+
 # testing
 /coverage
 

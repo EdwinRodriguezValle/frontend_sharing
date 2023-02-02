@@ -53,7 +53,7 @@ function SingUp (){
                 <fieldset>
                     <legend>PERSONAL INFORMATION</legend>
                     <label htmlFor="details-name">
-                        Name:
+                        Name *
                         <input
                             type="text"
                             {...register("name", {
@@ -79,7 +79,7 @@ function SingUp (){
                     </label>
 
                     <label htmlFor="details-name">
-                        Last Name:
+                        Last Name *
                         <input
                             type="text"
                             {...register("lastName",
@@ -101,7 +101,7 @@ function SingUp (){
                     </label>
 
                     <label htmlFor="details-age">
-                        Age:
+                        Age *
                         <input
                             type="date"
                             {...register("age",
@@ -127,7 +127,7 @@ function SingUp (){
                     </label>
 
                     <label htmlFor="details-gender">
-                        Gender:
+                        Gender *
                         <select
                             id="gender"
                             {...register("gender",{
@@ -146,7 +146,7 @@ function SingUp (){
                     </label>
 
                     <label htmlFor="details-email">
-                        Email:
+                        Email *
                         <input
                             type="text"
                             {...register("email",{
@@ -167,7 +167,7 @@ function SingUp (){
                     </label>
 
                     <label htmlFor="details-telephone">
-                        Telephone number:
+                        Telephone number *
                         <input
                             type="number"
                             {...register("telephone",
@@ -193,7 +193,7 @@ function SingUp (){
                     </label>
 
                     <label htmlFor="details-address">
-                        Address:
+                        Address *
                         <input
                             type="text"
                             {...register("address",
@@ -211,7 +211,7 @@ function SingUp (){
                     </label>
 
                     <label htmlFor="details-language">
-                        Language:
+                        Language *
                         <select
                             {...register("language",
                                 {
@@ -238,7 +238,7 @@ function SingUp (){
                 <fieldset>
                     <legend>ADDITIONAL INFORMATION</legend>
                     <label htmlFor="recipe-comments">
-                        Notas:
+                        Notas *
                         <textarea
                             {...register("notas",{
                                 required: {
@@ -277,9 +277,8 @@ function SingUp (){
                                // checked={estadoFormulario.newsletter}
                                // onChange={handleFormChange}
                         />
-                        Subscribe to our news latter
+                        Subscribe to our news latter *
                     </label>
-
 
                 </fieldset>
                 <fieldset className="boton">
