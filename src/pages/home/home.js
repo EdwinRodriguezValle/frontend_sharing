@@ -1,13 +1,19 @@
 import React, {useState} from "react";
-import home from "./home.css"
-import Footer from "../../components/footer/footer";
+import "./home.css"
 import meet from "../../assets/meet.gif"
 import share from "../../assets/share.jpg"
 import grow from "../../assets/grow.jpg"
 import enjoy from "../../assets/enjoy.jpg"
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 function Home() {
+
+    const navigate = useNavigate();
+
+    function handleClick() {
+        console.log('We gaan direct door naar de afspraken pagina!');
+        navigate("/singup");
+    }
 
 
     return (
@@ -15,24 +21,26 @@ function Home() {
 
         <>
 
-            <div>
-                <h1>Home Page</h1>
-                <Link to="/Home">Home-Page</Link>
-            </div>
+            {/*<div>*/}
+            {/*    <h1>Home Page</h1>*/}
+            {/*    <Link to="/Home">Home-Page</Link>*/}
+            {/*</div>*/}
 
 
             <main>
 
                 <header>
                     <h1> HEADER DARE TO EXPERIENCE AND SENSE NEW WAYS OF LIVING</h1>
-                    <Link to="/singup" className="joinus">
+
                         <button
-                            id="joinUs"
                         type = "button"
+                        id="joinUs"
+                        className="joinus"
+                        onClick={handleClick}
                         >
                         JOIN US
                     </button>
-                    </Link>
+
 
                     <h2>Enhance your life and your personality by hosting travellers from all around the world and
                         visiting nice people and cultures</h2>

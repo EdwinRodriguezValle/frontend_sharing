@@ -37,6 +37,7 @@ function App() {
        <Footer/>
 
        <Routes>
+           {/*<Route path="/product/:id" element={<ProductPage/>} />*/}
            <Route path="/" element={<Home/>}/>
            <Route path="/singup" element={<SingUp/>}/>
            <Route path="/singIn" element={<SingIn/>}/>
