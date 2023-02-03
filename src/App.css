@@ -9,59 +9,35 @@
     box-sizing: border-box;
 }
 
+
 body {
-    font-family: "Roboto Light", sans-serif;
-}
-
-/* ------------------------------- 2. Areas ---------------------------------------- */
-
-
-
-/* --------------- 2.3 Products ------------------- */
-
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 100px;
-}
-
-.product {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex-basis: 300px;
-    margin: 20px;
-    flex-grow: 0;
-    flex-shrink: 0;
-}
-
-.product-name {
-    font-weight: 300;
-    color: rgba(239, 1, 73, 0.91);
-    margin: 20px 0;
-}
-
-.product-description {
-    font-weight: 200;
-    font-size: 16px;
-    text-align: justify;
-    color: #333333;
-}
-
-.product img {
+    justify-content: center;
+    font-family: "Roboto Light", sans-serif;
     width: 100%;
+    height: 100%;
 }
 
-/* ------------------------------- 3. Media Queries -------------------------------- */
-
-@media screen and (max-width: 1200px) {
-    main {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .product {
-        flex-grow: 1;
-    }
+h1 h2 h3 h4 h5 h6 {
+    color: black;
 }
+
+/*!* ------------------------------- 2. Areas ---------------------------------------- *!*/
+
+
+/*!* --------------- 2.3 Products ------------------- *!*/
+
+
+
+/*!* ------------------------------- 3. Media Queries -------------------------------- *!*/
+
+/*@media screen and (max-width: 1200px) {*/
+/*    main {*/
+/*        flex-wrap: wrap;*/
+/*        justify-content: center;*/
+/*    }*/
+
+
+/*}*/
