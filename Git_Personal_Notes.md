@@ -1,4 +1,4 @@
-con#Pasos para seguir en git #
+#PERSONAL NOTAS ABOUT GIT
 
 1. En tu proyecto iniciar git con el comando.
 ## git init ##
